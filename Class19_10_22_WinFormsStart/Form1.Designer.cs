@@ -52,6 +52,7 @@
             this.btn_Play.TabIndex = 1;
             this.btn_Play.Text = "Играть";
             this.btn_Play.UseVisualStyleBackColor = true;
+            this.btn_Play.Click += new System.EventHandler(this.btn_Play_Click);
             // 
             // btn_Stop
             // 
@@ -64,6 +65,7 @@
             this.btn_Stop.TabIndex = 2;
             this.btn_Stop.Text = "Стоп";
             this.btn_Stop.UseVisualStyleBackColor = false;
+            this.btn_Stop.Click += new System.EventHandler(this.btn_Stop_Click);
             // 
             // Form1
             // 

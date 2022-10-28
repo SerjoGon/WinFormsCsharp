@@ -21,12 +21,22 @@ namespace WindowsFormsless3
         {
             Form2 f = new Form2("форма без переключения ");
             f.Pubtext = "Hello from mother form!";
-            f.ShowDialog();
+            f.ShowDialog("Hello DialogShow ");
             f.Close();
             Form2 f2 = new Form2("форма c переключением");
             f2.Pubtext = "Hello from mother form2!";
-            f2.ShowDialog();
+            f2.Show();
             f2.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 frm2 = new Form2("");
+            if (frm2.ShowDialog() == DialogResult.OK)
+            {
+                listBox1.Items.Add(frm2.Pubtext);
+            }
+
         }
     }
 }

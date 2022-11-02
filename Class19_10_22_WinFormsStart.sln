@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsless3", "Window
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Check_on_click", "Check_on_click\Check_on_click.csproj", "{04036E56-F903-4CD6-8E1D-9D2CF2DB9C20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW_8_BestOil", "HW_8_BestOil\HW_8_BestOil.csproj", "{9DC0F5BB-78E8-4779-AB6A-4B6F6B43ACBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{04036E56-F903-4CD6-8E1D-9D2CF2DB9C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04036E56-F903-4CD6-8E1D-9D2CF2DB9C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04036E56-F903-4CD6-8E1D-9D2CF2DB9C20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DC0F5BB-78E8-4779-AB6A-4B6F6B43ACBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC0F5BB-78E8-4779-AB6A-4B6F6B43ACBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC0F5BB-78E8-4779-AB6A-4B6F6B43ACBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC0F5BB-78E8-4779-AB6A-4B6F6B43ACBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApp_04_11CW.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_04_11CW"
+        mc:Ignorable="d"
+        Title="Моё окно!" Height="640" Width="480">
+    <Grid>
+        <Button x:Name="myButton" Content="myButton" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" Width="400" FontFamily="Calibri" FontSize="24" FontWeight="Bold" FontStyle="Italic" Foreground="#FF6229CC" BorderBrush="#FFE00D0D" Click="Button_Click" Height="38">
+            <Button.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Gold"/>
+                    <GradientStop Color="#FFE61111" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.OpacityMask>
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Gold" Offset="0.514"/>
+                    <GradientStop Color="#FFEC730E" Offset="0.896"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Grid Margin="0,169,0,0">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFE00707" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+
+    </Grid>
+</Window>

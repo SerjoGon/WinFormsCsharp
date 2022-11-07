@@ -28,7 +28,16 @@ namespace WpfApp_04_11CW
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            myButton.Background = Brushes.AliceBlue;
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            myWrappan.Width = Width * 2 / 3;
+        }
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            myWrappan.Width = Width * 2 / 3;
         }
     }
 }

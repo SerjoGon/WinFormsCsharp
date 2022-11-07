@@ -16,7 +16,7 @@ namespace HW_8_BestOil
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new fMain());
         }
     }
 }

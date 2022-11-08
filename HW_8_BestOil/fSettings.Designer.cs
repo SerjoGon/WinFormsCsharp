@@ -65,6 +65,7 @@
             this.btnReset.TabIndex = 35;
             this.btnReset.Text = "Сброс";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // tbxGain
             // 
@@ -192,6 +193,7 @@
             this.btnCancel.TabIndex = 26;
             this.btnCancel.Text = "Отмена";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOk
             // 
@@ -201,6 +203,7 @@
             this.btnOk.TabIndex = 25;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // gbxEditCafePrice
             // 
@@ -310,6 +313,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Настройки";
+            this.Load += new System.EventHandler(this.fSettings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudPause)).EndInit();
             this.gbxEditGasPrice.ResumeLayout(false);
             this.gbxEditGasPrice.PerformLayout();

@@ -16,7 +16,7 @@ namespace HW_8_BestOil
         public fCheck(int order, string check)
         {
             InitializeComponent();
-            Text = $"Order N{order}";
+            Text = $"Чек N{order}";
             tbxCheck.Text = check;
         }
     }

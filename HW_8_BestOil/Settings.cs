@@ -23,6 +23,9 @@ namespace HW_8_BestOil
 
         static string regKeyName = "Software\\BestOil";
 
+        public static int trbar1Red = 123;
+        public static int trbar2Green = 32;
+        public static int trbar3Blue = 34;
         static public void ReadSettings()
         {
             RegistryKey rk = null;

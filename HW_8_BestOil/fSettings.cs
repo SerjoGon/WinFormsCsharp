@@ -13,6 +13,7 @@ namespace HW_8_BestOil
 {
     public partial class fSettings : Form
     {
+        
         public fSettings()
         {
             InitializeComponent();
@@ -65,6 +66,30 @@ namespace HW_8_BestOil
         {
             tbxGain.Text = "0";
             Settings.gain = Convert.ToDouble(tbxGain.Text);
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            if(trackBar1.Value != 0)
+            {
+                Settings.trbar1Red = trackBar1.Value;
+            }
+        }
+
+        private void trackBar3_Scroll(object sender, EventArgs e)
+        {
+            if (trackBar3.Value != 0)
+            {
+                Settings.trbar2Green = trackBar3.Value;
+            }
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            if (trackBar2.Value != 0)
+            {
+                Settings.trbar3Blue = trackBar2.Value;
+            }
         }
     }
 }

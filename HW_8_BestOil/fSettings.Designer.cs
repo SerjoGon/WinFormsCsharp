@@ -52,9 +52,19 @@
             this.tbxFrenchFriesPrice = new System.Windows.Forms.TextBox();
             this.tbxHotDogPrice = new System.Windows.Forms.TextBox();
             this.tbxHamburgerPrice = new System.Windows.Forms.TextBox();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudPause)).BeginInit();
             this.gbxEditGasPrice.SuspendLayout();
             this.gbxEditCafePrice.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnReset
@@ -187,7 +197,7 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(165, 336);
+            this.btnCancel.Location = new System.Drawing.Point(153, 442);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 26;
@@ -197,7 +207,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(246, 336);
+            this.btnOk.Location = new System.Drawing.Point(247, 442);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 25;
@@ -290,11 +300,81 @@
             this.tbxHamburgerPrice.TabIndex = 19;
             this.tbxHamburgerPrice.Text = "125";
             // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(71, 289);
+            this.trackBar1.Maximum = 255;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(248, 45);
+            this.trackBar1.TabIndex = 36;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.Location = new System.Drawing.Point(71, 340);
+            this.trackBar2.Maximum = 255;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(248, 45);
+            this.trackBar2.TabIndex = 37;
+            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
+            // 
+            // trackBar3
+            // 
+            this.trackBar3.Location = new System.Drawing.Point(71, 391);
+            this.trackBar3.Maximum = 255;
+            this.trackBar3.Name = "trackBar3";
+            this.trackBar3.Size = new System.Drawing.Size(248, 45);
+            this.trackBar3.TabIndex = 38;
+            this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(8, 391);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 13);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "Синий";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(8, 340);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.TabIndex = 40;
+            this.label8.Text = "Зеленый";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(8, 289);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 13);
+            this.label9.TabIndex = 41;
+            this.label9.Text = "Красный ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(101, 254);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(173, 13);
+            this.label10.TabIndex = 42;
+            this.label10.Text = "Изменение цвета главного окна";
+            // 
             // fSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 371);
+            this.ClientSize = new System.Drawing.Size(334, 477);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.trackBar3);
+            this.Controls.Add(this.trackBar2);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.tbxGain);
             this.Controls.Add(this.label5);
@@ -319,6 +399,9 @@
             this.gbxEditGasPrice.PerformLayout();
             this.gbxEditCafePrice.ResumeLayout(false);
             this.gbxEditCafePrice.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -350,5 +433,12 @@
         private System.Windows.Forms.TextBox tbxFrenchFriesPrice;
         private System.Windows.Forms.TextBox tbxHotDogPrice;
         private System.Windows.Forms.TextBox tbxHamburgerPrice;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.TrackBar trackBar3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }

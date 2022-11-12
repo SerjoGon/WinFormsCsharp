@@ -109,6 +109,8 @@ namespace HW_8_BestOil
 
             toolStripProgressBar1.Maximum = Settings.pauseDuration;
             toolStripProgressBar1.Value = Settings.pauseDuration;
+
+            this.BackColor = Color.FromArgb(Settings.trbar1Red,Settings.trbar2Green,Settings.trbar3Blue);
         }
         void DefaultPosition()
         {

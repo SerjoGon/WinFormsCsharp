@@ -550,6 +550,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(625, 681);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnSettings);
@@ -557,8 +558,10 @@
             this.Controls.Add(this.gbxTotalToPay);
             this.Controls.Add(this.gbxStation);
             this.Controls.Add(this.gbxCafe);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "fMain";
-            this.Text = "Form1";
+            this.Text = "BestOil";
+            this.TransparencyKey = System.Drawing.Color.Blue;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fMain_FormClosing);
             this.Load += new System.EventHandler(this.fMain_Load);
             this.gbxCafe.ResumeLayout(false);

@@ -40,6 +40,7 @@
             this.textBoxPath = new System.Windows.Forms.TextBox();
             this.listView = new System.Windows.Forms.ListView();
             this.iconList = new System.Windows.Forms.ImageList(this.components);
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
             // btn_back
@@ -117,9 +118,9 @@
             // listView
             // 
             this.listView.LargeImageList = this.iconList;
-            this.listView.Location = new System.Drawing.Point(0, 30);
+            this.listView.Location = new System.Drawing.Point(227, 30);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(798, 370);
+            this.listView.Size = new System.Drawing.Size(571, 370);
             this.listView.SmallImageList = this.iconList;
             this.listView.TabIndex = 8;
             this.listView.UseCompatibleStateImageBehavior = false;
@@ -141,11 +142,22 @@
             this.iconList.Images.SetKeyName(7, "PDFEE.ico");
             this.iconList.Images.SetKeyName(8, "Exe-file.ico");
             // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(0, 30);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(221, 370);
+            this.treeView1.TabIndex = 9;
+            this.treeView1.BeforeExpand += new System.Windows.Forms.TreeViewCancelEventHandler(this.treeView1_BeforeExpand);
+            this.treeView1.BeforeSelect += new System.Windows.Forms.TreeViewCancelEventHandler(this.treeView1_BeforeSelect);
+            this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
+            // 
             // FileExplorerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.treeView1);
             this.Controls.Add(this.listView);
             this.Controls.Add(this.textBoxPath);
             this.Controls.Add(this.lbl_path);
@@ -175,5 +187,6 @@
         private TextBox textBoxPath;
         private ListView listView;
         private ImageList iconList;
+        private TreeView treeView1;
     }
 }
